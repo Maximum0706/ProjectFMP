@@ -34,7 +34,7 @@ $conn->close();
                 <input type="text" class="form-control" id="nama_dmu" name="nama_dmu" required>
             </div>
             <button type="submit" class="btn btn-primary">Save</button>
-            <a href="index.php" class="btn btn-secondary">Cancel</a>
+            <a href="dmu.php" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </body>

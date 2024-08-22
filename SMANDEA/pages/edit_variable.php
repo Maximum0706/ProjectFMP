@@ -69,7 +69,7 @@ $conn->close();
                     required>
             </div>
             <button type="submit" class="btn btn-primary">Update</button>
-            <a href="index.php" class="btn btn-secondary">Cancel</a>
+            <a href="variable.php" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </body>
