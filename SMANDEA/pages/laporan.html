@@ -17,7 +17,8 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
@@ -216,14 +217,15 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active " href="../pages/hasilanalisa.html">
+                    <a class="nav-link  " href="../pages/hasilanalisa.html">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>settings</title>
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                    <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF"
+                                        fill-rule="nonzero">
                                         <g transform="translate(1716.000000, 291.000000)">
                                             <g transform="translate(304.000000, 151.000000)">
                                                 <polygon class="color-background opacity-6"
@@ -244,6 +246,36 @@
                         <span class="nav-link-text ms-1">Hasil Analisa</span>
                     </a>
                 </li>
+
+                                   <li class="nav-item">
+                                        <a class="nav-link active " href="../pages/laporan.html">
+                                            <div
+                                                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                                                <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <title>settings</title>
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                                            <g transform="translate(1716.000000, 291.000000)">
+                                                                <g transform="translate(304.000000, 151.000000)">
+                                                                    <polygon class="color-background opacity-6"
+                                                                        points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667">
+                                                                    </polygon>
+                                                                    <path class="color-background opacity-6"
+                                                                        d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z">
+                                                                    </path>
+                                                                    <path class="color-background"
+                                                                        d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z">
+                                                                    </path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <span class="nav-link-text ms-1">Laporan</span>
+                                        </a>
+                                    </li>
 
 
                 <li class="nav-item mt-3">
@@ -361,80 +393,242 @@
         <!-- End Navbar -->
 
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    
+        .chart {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    
+        .chart-container {
+            height: 300px;
+            position: relative;
+        }
+    
+        .chart-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            font-size: 12px;
+        }
+    
+        .chart-point {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #FFD700;
+            margin: 0 5px;
+        }
+    
+        .chart-label {
+            text-align: center;
+            width: 100px;
+        }
+    
+        .table-container {
+            margin: 20px;
+        }
+    
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    
+        .table-container th,
+        .table-container td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+    </head>
+    
     <body>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Data Hasil Analisa</h3>
-                            <nav aria-label="breadcrumb">
-
-                            </nav>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>NO</th>
-                                            <th>DMU</th>
-                                            <th>EFISIENSI</th>
-                                            <th>STATUS</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>SMAN 1 Tanah Luas</td>
-                                            <td>1</td>
-                                            <td>Efisien</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>SMAN 1 Samudera</td>
-                                            <td>0.992</td>
-                                            <td>Tidak Efisien</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>SMAN 1 Matangkuli</td>
-                                            <td>0.995</td>
-                                            <td>Tidak Efisien</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>SMAN 1 Meurah Mulia</td>
-                                            <td>1</td>
-                                            <td>Efisien</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>SMAN 1 Syamtalira Aron</td>
-                                            <td>1</td>
-                                            <td>Efisien</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg></button>
-                                <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
-                                    </svg></button>
+        <div class="container">
+            <h2 class="text-center mb-4">Rasio Efisiensi</h2>
+            <div class="chart">
+                <h3>Hasil analisa rasio efisiensi</h3>
+                <div class="chart-container">
+                    <div class="chart-line">
+                        <div class="chart-label">Tanah Luas</div>
+                        <div class="chart-point"></div>
+                        <div class="chart-label">Samudera</div>
+                        <div class="chart-point"></div>
+                        <div class="chart-label">Matangkuli</div>
+                        <div class="chart-point"></div>
+                        <div class="chart-label">Meurah Mulia</div>
+                        <div class="chart-point"></div>
+                        <div class="chart-label">Syamtalira Aron</div>
+                        <div class="chart-point"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="2">DMU</th>
+                            <th colspan="5">Input</th>
+                            <th colspan="5">Output</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>v1</th>
+                            <th>v2</th>
+                            <th>v3</th>
+                            <th>v4</th>
+                            <th>ul</th>
+                            <th>u2</th>
+                            <th>u3</th>
+                            <th>u4</th>
+                            <th>u5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SMAN 1</td>
+                            <td>Tanah Luas</td>
+                            <td>1513</td>
+                            <td>1971</td>
+                            <td>2004</td>
+                            <td>40</td>
+                            <td>321</td>
+                            <td>40.04</td>
+                            <td>37.04</td>
+                            <td>34</td>
+                            <td>236</td>
+                        </tr>
+                        <tr>
+                            <td>SMAN 1</td>
+                            <td>Samudera</td>
+                            <td>1641</td>
+                            <td>2035</td>
+                            <td>2170</td>
+                            <td>41</td>
+                            <td>255</td>
+                            <td>45.08</td>
+                            <td>40.77</td>
+                            <td>27</td>
+                            <td>211</td>
+                        </tr>
+                        <tr>
+                            <td>SMAN 1</td>
+                            <td>Matangkuli</td>
+                            <td>1452</td>
+                            <td>1838</td>
+                            <td>1865</td>
+                            <td>37</td>
+                            <td>277</td>
+                            <td>37.59</td>
+                            <td>35.06</td>
+                            <td>35</td>
+                            <td>161</td>
+                        </tr>
+                        <tr>
+                            <td>SMAN 1</td>
+                            <td>Meurah Mulia</td>
+                            <td>755</td>
+                            <td>935</td>
+                            <td>995</td>
+                            <td>26</td>
+                            <td>248</td>
+                            <td>34.28</td>
+                            <td>33.5</td>
+                            <td>0</td>
+                            <td>107</td>
+                        </tr>
+                        <tr>
+                            <td>SMAN 1</td>
+                            <td>Syamtalira Aron</td>
+                            <td>1181</td>
+                            <td>1482</td>
+                            <td>1517</td>
+                            <td>33</td>
+                            <td>265</td>
+                            <td>39.61</td>
+                            <td>35.43</td>
+                            <td>32</td>
+                            <td>135</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>DMU</th>
+                            <th>Efisiensi</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>SMAN 1 Tanah Luas</td>
+                            <td>1</td>
+                            <td>Efisien</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>SMAN 1 Samudera</td>
+                            <td>0.992</td>
+                            <td>Tidak Efisien</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>SMAN 1 Matangkuli</td>
+                            <td>0.995</td>
+                            <td>Tidak Efisien</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>SMAN 1 Meurah Mulia</td>
+                            <td>1</td>
+                            <td>Efisien</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>SMAN 1 Syamtalira Aron</td>
+                            <td>1</td>
+                            <td>Efisien</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-chevron-left"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg></button>
+                                    <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-chevron-right"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                                        </svg></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </body>
+        </body>
         <div class="fixed-plugin">
             <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
                 <i class="fa fa-cog py-2"> </i>
@@ -529,7 +723,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
         <script>
             $(document).ready(function () {
                 $('#showLinearProgramming').click(function () {
