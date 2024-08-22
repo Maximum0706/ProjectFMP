@@ -9,7 +9,7 @@ frontend:
   # Scripts will run in the specified `path` folder.
   scripts:
     # The command to build your frontend project. This is custom to your project.
-    # It must to populate the specified `publish` folder with a `index.html` file.
+    # It must to populate the specified `publish` folder with a `index.php` file.
     deploy:
       - npm install --legacy-peer-deps
 yamlVersion: 2
