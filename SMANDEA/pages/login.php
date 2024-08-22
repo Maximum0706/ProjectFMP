@@ -1,30 +1,9 @@
 <?php
-session_start(); // Memulai session
+session_start(); // Memulai sesi
 
 // Koneksi ke database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dea_analysis";
+// ...
 
-// Membuat koneksi
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Cek koneksi
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Fungsi untuk membersihkan input
-function clean_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-
-// Jika form di-submit
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Ambil data dari form dan lakukan sanitasi
     $user = clean_input($_POST['username']);
@@ -60,10 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Username atau password tidak valid.";
     }
 
-    // Menutup statement
     $stmt->close();
 }
 
-// Menutup koneksi
 $conn->close();
 ?>
