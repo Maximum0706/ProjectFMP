@@ -21,8 +21,7 @@
 
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Nepcha Analytics (nepcha.com) -->
     <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
@@ -185,38 +184,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="../pages/analisa.php">
-                        <div
-                            class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <title>settings</title>
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF"
-                                        fill-rule="nonzero">
-                                        <g transform="translate(1716.000000, 291.000000)">
-                                            <g transform="translate(304.000000, 151.000000)">
-                                                <polygon class="color-background opacity-6"
-                                                    points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667">
-                                                </polygon>
-                                                <path class="color-background opacity-6"
-                                                    d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z">
-                                                </path>
-                                                <path class="color-background"
-                                                    d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z">
-                                                </path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <span class="nav-link-text ms-1">Analisa</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active " href="../pages/hasilanalisa.php">
+                    <a class="nav-link active " href="../pages/analisa.php">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +209,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <span class="nav-link-text ms-1">Hasil Analisa</span>
+                        <span class="nav-link-text ms-1">Analisa</span>
                     </a>
                 </li>
 
@@ -361,342 +329,457 @@
         <!-- End Navbar -->
 
 
-    <body>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Data Hasil Analisa</h3>
-                            <nav aria-label="breadcrumb">
+    <style>
+        .table-container {
+            margin-bottom: 20px;
+        }
 
-                            </nav>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>NO</th>
-                                            <th>DMU</th>
-                                            <th>EFISIENSI</th>
-                                            <th>STATUS</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>SMAN 1 Tanah Luas</td>
-                                            <td>1</td>
-                                            <td>Efisien</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>SMAN 1 Samudera</td>
-                                            <td>0.992</td>
-                                            <td>Tidak Efisien</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>SMAN 1 Matangkuli</td>
-                                            <td>0.995</td>
-                                            <td>Tidak Efisien</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>SMAN 1 Meurah Mulia</td>
-                                            <td>1</td>
-                                            <td>Efisien</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>SMAN 1 Syamtalira Aron</td>
-                                            <td>1</td>
-                                            <td>Efisien</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg></button>
-                                <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                        height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
-                                    </svg></button>
-                            </div>
-                        </div>
+        .action-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+ .modal-body {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .table-modal {
+            font-size: 14px; /* Ukuran font untuk tabel */
+        }
+
+        /* Scroll horizontal jika tabel terlalu lebar */
+        .table-modal-container {
+            overflow-x: auto;
+        }
+
+        /* Atur lebar modal secara manual */
+        .modal-lg {
+            max-width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+            <h2>Data Nilai</h2>
+            <table class="table table-bordered">
+                <thead class="table-header">
+                    <tr>
+                        <th scope="col">DMU</th>
+                        <th colspan="4" scope="col">INPUT</th>
+                        <th colspan="5" scope="col">OUTPUT</th>
+                        <th scope="col">ACTION</th>
+                    </tr>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">V1</th>
+                        <th scope="col">V2</th>
+                        <th scope="col">V3</th>
+                        <th scope="col">V4</th>
+                        <th scope="col">U1</th>
+                        <th scope="col">U2</th>
+                        <th scope="col">U3</th>
+                        <th scope="col">U4</th>
+                        <th scope="col">U5</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td>SMAN 1 Tanah Luas</td>
+                        <td>1513</td>
+                        <td>1971</td>
+                        <td>2004</td>
+                        <td>40</td>
+                        <td>321</td>
+                        <td>40.04</td>
+                        <td>37.04</td>
+                        <td>34</td>
+                        <td>236</td>
+                        <td><button class="action-button" data-toggle="modal"
+                                data-target="#analisaModal">ANALISA</button></td>
+                    </tr>
+                    <tr>
+                        <td>SMAN 1 Samudera</td>
+                        <td>1641</td>
+                        <td>2035</td>
+                        <td>2170</td>
+                        <td>41</td>
+                        <td>255</td>
+                        <td>45.08</td>
+                        <td>40.77</td>
+                        <td>27</td>
+                        <td>211</td>
+                        <td><button class="action-button" data-toggle="modal"
+                                data-target="#analisaModal">ANALISA</button></td>
+                    </tr>
+                    <tr>
+                        <td>SMAN 1 Matangkull</td>
+                        <td>1452</td>
+                        <td>1838</td>
+                        <td>1865</td>
+                        <td>37</td>
+                        <td>277</td>
+                        <td>37.59</td>
+                        <td>35.06</td>
+                        <td>35</td>
+                        <td>161</td>
+                        <td><button class="action-button" data-toggle="modal"
+                                data-target="#analisaModal">ANALISA</button></td>
+                    </tr>
+                    <tr>
+                        <td>SMAN 1 Mourah Mulia</td>
+                        <td>755</td>
+                        <td>935</td>
+                        <td>995</td>
+                        <td>26</td>
+                        <td>248</td>
+                        <td>34.28</td>
+                        <td>33.5</td>
+                        <td>0</td>
+                        <td>107</td>
+                        <td><button class="action-button" data-toggle="modal"
+                                data-target="#analisaModal">ANALISA</button></td>
+                    </tr>
+                    <tr>
+                        <td>SMAN 1 Syamtalira Aron</td>
+                        <td>1181</td>
+                        <td>1482</td>
+                        <td>1517</td>
+                        <td>33</td>
+                        <td>265</td>
+                        <td>39.61</td>
+                        <td>35.43</td>
+                        <td>32</td>
+                        <td>135</td>
+                        <td><button class="action-button" data-toggle="modal"
+                                data-target="#analisaModal">ANALISA</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Modal Analisa -->
+    <div class="modal fade" id="analisaModal" tabindex="-1" role="dialog" aria-labelledby="analisaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="analisaModalLabel">Analisa DMU</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-modal-container">
+                        <table class="table table-bordered table-modal">
+                            <thead>
+                                <tr>
+                                    <th>u1</th>
+                                    <th>u2</th>
+                                    <th>u3</th>
+                                    <th>u4</th>
+                                    <th>u5</th>
+                                    <th>v1</th>
+                                    <th>v2</th>
+                                    <th>v3</th>
+                                    <th>v4</th>
+                                    <th>Rasio Efisiensi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0.00403</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0.00101</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                    <p>Maximize Z = 248u1+34.28u2+33.5u3+0u4+107u5</p>
+                    <button class="btn btn-primary" id="showLinearProgramming">Show Linear Programming</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-    </body>
-        <div class="fixed-plugin">
-            <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
-                <i class="fa fa-cog py-2"> </i>
-            </a>
-            <div class="card shadow-lg ">
-                <div class="card-header pb-0 pt-3 ">
-                    <div class="float-start">
-                        <h5 class="mt-3 mb-0">Soft UI Configurator</h5>
-                        <p>See our dashboard options.</p>
-                    </div>
-                    <div class="float-end mt-4">
-                        <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
-                            <i class="fa fa-close"></i>
-                        </button>
-                    </div>
-                    <!-- End Toggle Button -->
+    </div>
+            </body>
+    <div class="fixed-plugin">
+        <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
+            <i class="fa fa-cog py-2"> </i>
+        </a>
+        <div class="card shadow-lg ">
+            <div class="card-header pb-0 pt-3 ">
+                <div class="float-start">
+                    <h5 class="mt-3 mb-0">Soft UI Configurator</h5>
+                    <p>See our dashboard options.</p>
                 </div>
-                <hr class="horizontal dark my-1">
-                <div class="card-body pt-sm-3 pt-0">
-                    <!-- Sidebar Backgrounds -->
-                    <div>
-                        <h6 class="mb-0">Sidebar Colors</h6>
+                <div class="float-end mt-4">
+                    <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <!-- End Toggle Button -->
+            </div>
+            <hr class="horizontal dark my-1">
+            <div class="card-body pt-sm-3 pt-0">
+                <!-- Sidebar Backgrounds -->
+                <div>
+                    <h6 class="mb-0">Sidebar Colors</h6>
+                </div>
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <div class="badge-colors my-2 text-start">
+                        <span class="badge filter bg-gradient-primary active" data-color="primary"
+                            onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-dark" data-color="dark"
+                            onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-info" data-color="info"
+                            onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-success" data-color="success"
+                            onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-warning" data-color="warning"
+                            onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-danger" data-color="danger"
+                            onclick="sidebarColor(this)"></span>
                     </div>
-                    <a href="javascript:void(0)" class="switch-trigger background-color">
-                        <div class="badge-colors my-2 text-start">
-                            <span class="badge filter bg-gradient-primary active" data-color="primary"
-                                onclick="sidebarColor(this)"></span>
-                            <span class="badge filter bg-gradient-dark" data-color="dark"
-                                onclick="sidebarColor(this)"></span>
-                            <span class="badge filter bg-gradient-info" data-color="info"
-                                onclick="sidebarColor(this)"></span>
-                            <span class="badge filter bg-gradient-success" data-color="success"
-                                onclick="sidebarColor(this)"></span>
-                            <span class="badge filter bg-gradient-warning" data-color="warning"
-                                onclick="sidebarColor(this)"></span>
-                            <span class="badge filter bg-gradient-danger" data-color="danger"
-                                onclick="sidebarColor(this)"></span>
-                        </div>
+                </a>
+                <!-- Sidenav Type -->
+                <div class="mt-3">
+                    <h6 class="mb-0">Sidenav Type</h6>
+                    <p class="text-sm">Choose between 2 different sidenav types.</p>
+                </div>
+                <div class="d-flex">
+                    <button class="btn bg-gradient-primary w-100 px-3 mb-2 active" data-class="bg-transparent"
+                        onclick="sidebarType(this)">Transparent</button>
+                    <button class="btn bg-gradient-primary w-100 px-3 mb-2 ms-2" data-class="bg-white"
+                        onclick="sidebarType(this)">White</button>
+                </div>
+                <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+                <!-- Navbar Fixed -->
+                <div class="mt-3">
+                    <h6 class="mb-0">Navbar Fixed</h6>
+                </div>
+                <div class="form-check form-switch ps-0">
+                    <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed"
+                        onclick="navbarFixed(this)">
+                </div>
+                <hr class="horizontal dark my-sm-4">
+                <a class="btn bg-gradient-dark w-100" href="https://www.creative-tim.com/product/soft-ui-dashboard">Free
+                    Download</a>
+                <a class="btn btn-outline-dark w-100"
+                    href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard">View
+                    documentation</a>
+                <div class="w-100 text-center">
+                    <a class="github-button" href="https://github.com/creativetimofficial/soft-ui-dashboard"
+                        data-icon="octicon-star" data-size="large" data-show-count="true"
+                        aria-label="Star creativetimofficial/soft-ui-dashboard on GitHub">Star</a>
+                    <h6 class="mt-3">Thank you for sharing!</h6>
+                    <a href="https://twitter.com/intent/tweet?text=Check%20Soft%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard"
+                        class="btn btn-dark mb-0 me-2" target="_blank">
+                        <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
                     </a>
-                    <!-- Sidenav Type -->
-                    <div class="mt-3">
-                        <h6 class="mb-0">Sidenav Type</h6>
-                        <p class="text-sm">Choose between 2 different sidenav types.</p>
-                    </div>
-                    <div class="d-flex">
-                        <button class="btn bg-gradient-primary w-100 px-3 mb-2 active" data-class="bg-transparent"
-                            onclick="sidebarType(this)">Transparent</button>
-                        <button class="btn bg-gradient-primary w-100 px-3 mb-2 ms-2" data-class="bg-white"
-                            onclick="sidebarType(this)">White</button>
-                    </div>
-                    <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
-                    <!-- Navbar Fixed -->
-                    <div class="mt-3">
-                        <h6 class="mb-0">Navbar Fixed</h6>
-                    </div>
-                    <div class="form-check form-switch ps-0">
-                        <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed"
-                            onclick="navbarFixed(this)">
-                    </div>
-                    <hr class="horizontal dark my-sm-4">
-                    <a class="btn bg-gradient-dark w-100"
-                        href="https://www.creative-tim.com/product/soft-ui-dashboard">Free
-                        Download</a>
-                    <a class="btn btn-outline-dark w-100"
-                        href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard">View
-                        documentation</a>
-                    <div class="w-100 text-center">
-                        <a class="github-button" href="https://github.com/creativetimofficial/soft-ui-dashboard"
-                            data-icon="octicon-star" data-size="large" data-show-count="true"
-                            aria-label="Star creativetimofficial/soft-ui-dashboard on GitHub">Star</a>
-                        <h6 class="mt-3">Thank you for sharing!</h6>
-                        <a href="https://twitter.com/intent/tweet?text=Check%20Soft%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard"
-                            class="btn btn-dark mb-0 me-2" target="_blank">
-                            <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
-                        </a>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/soft-ui-dashboard"
-                            class="btn btn-dark mb-0 me-2" target="_blank">
-                            <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
-                        </a>
-                    </div>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/soft-ui-dashboard"
+                        class="btn btn-dark mb-0 me-2" target="_blank">
+                        <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
+                    </a>
                 </div>
             </div>
         </div>
-        <!--   Core JS Files   -->
-        <script src="../assets/js/core/popper.min.js"></script>
-        <script src="../assets/js/core/bootstrap.min.js"></script>
-        <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-        <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-        <script src="../assets/js/plugins/chartjs.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#showLinearProgramming').click(function () {
-                    // Add your code to show the linear programming here
-                    // Example: alert("Show linear programming!");
-                });
-            });
-        </script>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#showLinearProgramming').click(function () {
+            // Add your code to show the linear programming here
+            // Example: alert("Show linear programming!");
+        });
+    });
+</script>
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var ctx = document.getElementById('doughnut-chart').getContext('2d');
-                new Chart(ctx, {
-                    type: 'doughnut',
-                    data: {
-                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                        datasets: [{
-                            label: 'My First Dataset',
-                            data: [300, 50, 100, 80, 120, 90],
-                            backgroundColor: [
-                                'rgb(255, 99, 132)',
-                                'rgb(54, 162, 235)',
-                                'rgb(255, 205, 86)',
-                                'rgb(75, 192, 192)',
-                                'rgb(153, 102, 255)',
-                                'rgb(255, 159, 64)'
-                            ],
-                            hoverOffset: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        plugins: {
-                            legend: {
-                                position: 'top',
-                            },
-                            tooltip: {
-                                enabled: true
-                            }
-                        }
-                    }
-                });
-            });
-        </script>
-
-
-
-
-
-        <script>
-
-            var ctx2 = document.getElementById("chart-line").getContext("2d");
-
-            var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
-
-            gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
-            gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
-            gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
-
-            var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
-
-            gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
-            gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
-            gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
-
-            new Chart(ctx2, {
-                type: "line",
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ctx = document.getElementById('doughnut-chart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
                 data: {
-                    labels: ["Tanah Luas", "Matangkuli", "Syamtalira Aron"],
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                     datasets: [{
-                        label: "Mobile apps",
-                        tension: 0.4,
-                        borderWidth: 0,
-                        pointRadius: 0,
-                        borderColor: "#cb0c9f",
-                        borderWidth: 3,
-                        backgroundColor: gradientStroke1,
-                        fill: true,
-                        data: [50, 40, 300, 220],
-                        maxBarThickness: 4
-
-                    },
-                    {
-                        label: "Websites",
-                        tension: 0.4,
-                        borderWidth: 0,
-                        pointRadius: 0,
-                        borderColor: "#3A416F",
-                        borderWidth: 3,
-                        backgroundColor: gradientStroke2,
-                        fill: true,
-                        data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
-                        maxBarThickness: 6
-                    },
-                    ],
+                        label: 'My First Dataset',
+                        data: [300, 50, 100, 80, 120, 90],
+                        backgroundColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(54, 162, 235)',
+                            'rgb(255, 205, 86)',
+                            'rgb(75, 192, 192)',
+                            'rgb(153, 102, 255)',
+                            'rgb(255, 159, 64)'
+                        ],
+                        hoverOffset: 4
+                    }]
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            display: false,
+                            position: 'top',
+                        },
+                        tooltip: {
+                            enabled: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+    <script>
+
+        var ctx2 = document.getElementById("chart-line").getContext("2d");
+
+        var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+        gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
+        gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+        gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
+
+        var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+        gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
+        gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+        gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
+
+        new Chart(ctx2, {
+            type: "line",
+            data: {
+                labels: ["Tanah Luas", "Matangkuli", "Syamtalira Aron"],
+                datasets: [{
+                    label: "Mobile apps",
+                    tension: 0.4,
+                    borderWidth: 0,
+                    pointRadius: 0,
+                    borderColor: "#cb0c9f",
+                    borderWidth: 3,
+                    backgroundColor: gradientStroke1,
+                    fill: true,
+                    data: [50, 40, 300, 220],
+                    maxBarThickness: 4
+
+                },
+                {
+                    label: "Websites",
+                    tension: 0.4,
+                    borderWidth: 0,
+                    pointRadius: 0,
+                    borderColor: "#3A416F",
+                    borderWidth: 3,
+                    backgroundColor: gradientStroke2,
+                    fill: true,
+                    data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+                    maxBarThickness: 6
+                },
+                ],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                interaction: {
+                    intersect: false,
+                    mode: 'index',
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            drawBorder: false,
+                            display: true,
+                            drawOnChartArea: true,
+                            drawTicks: false,
+                            borderDash: [5, 5]
+                        },
+                        ticks: {
+                            display: true,
+                            padding: 10,
+                            color: '#b2b9bf',
+                            font: {
+                                size: 11,
+                                family: "Open Sans",
+                                style: 'normal',
+                                lineHeight: 2
+                            },
                         }
                     },
-                    interaction: {
-                        intersect: false,
-                        mode: 'index',
-                    },
-                    scales: {
-                        y: {
-                            grid: {
-                                drawBorder: false,
-                                display: true,
-                                drawOnChartArea: true,
-                                drawTicks: false,
-                                borderDash: [5, 5]
-                            },
-                            ticks: {
-                                display: true,
-                                padding: 10,
-                                color: '#b2b9bf',
-                                font: {
-                                    size: 11,
-                                    family: "Open Sans",
-                                    style: 'normal',
-                                    lineHeight: 2
-                                },
-                            }
+                    x: {
+                        grid: {
+                            drawBorder: false,
+                            display: false,
+                            drawOnChartArea: false,
+                            drawTicks: false,
+                            borderDash: [5, 5]
                         },
-                        x: {
-                            grid: {
-                                drawBorder: false,
-                                display: false,
-                                drawOnChartArea: false,
-                                drawTicks: false,
-                                borderDash: [5, 5]
+                        ticks: {
+                            display: true,
+                            color: '#b2b9bf',
+                            padding: 20,
+                            font: {
+                                size: 11,
+                                family: "Open Sans",
+                                style: 'normal',
+                                lineHeight: 2
                             },
-                            ticks: {
-                                display: true,
-                                color: '#b2b9bf',
-                                padding: 20,
-                                font: {
-                                    size: 11,
-                                    family: "Open Sans",
-                                    style: 'normal',
-                                    lineHeight: 2
-                                },
-                            }
-                        },
+                        }
                     },
                 },
-            });
-        </script>
-        <script>
-            var win = navigator.platform.indexOf('Win') > -1;
-            if (win && document.querySelector('#sidenav-scrollbar')) {
-                var options = {
-                    damping: '0.5'
-                }
-                Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+            },
+        });
+    </script>
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
             }
-        </script>
-        <!-- Github buttons -->
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
-        <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-        <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
 </body>
 
 </html>

@@ -340,7 +340,7 @@ $nilai_result = $conn->query($nilai_sql);
             <div class="container mt-5">
                 <h2 class="mb-4">Data Nilai</h2>
                 <div class="d-flex justify-content-end mb-3">
-                    <a href="create_variable.php" class="btn btn-success">Tambah Nilai</a>
+                    <a href="create_nilai.php" class="btn btn-success">Tambah Nilai</a>
                 </div>
                 <table class="table table-striped">
                     <thead>
@@ -352,8 +352,6 @@ $nilai_result = $conn->query($nilai_sql);
                                     <?= $variable_row['nama_variabel'] ?>
                                 </th>
                             <?php endwhile; ?>
-                            <th>Efficiency</th>
-                            <th>Status DEA</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -368,13 +366,6 @@ $nilai_result = $conn->query($nilai_sql);
                                     <td><?= $row['sapi_yang_di_ib'] ?></td>
                                     <td><?= $row['pkb_bunting'] ?></td>
                                     <td><?= $row['kelahiran'] ?></td>
-                                    <td><?= $row['u1'] ?></td>
-                                    <td><?= $row['u2'] ?></td>
-                                    <td><?= $row['u3'] ?></td>
-                                    <td><?= $row['v1'] ?></td>
-                                    <td><?= $row['v2'] ?></td>
-                                    <td><?= $row['efficiency'] ?></td>
-                                    <td><?= $row['status_dea'] ?></td>
                                     <td>
                                         <a href="edit_nilai.php?id=<?= $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a>
                                         <a href="delete_nilai.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm"
